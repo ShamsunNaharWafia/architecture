@@ -13,6 +13,7 @@ header {
 .starter {
     margin: 0px 30px;
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -71,4 +72,49 @@ article {
     margin-right: 1200px;
     width: 100%;
     height: 100%;
+}
+
+/* ---------- first container -------- */
+section {
+    margin: 60px 140px;
+}
+
+.first-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.feature {
+    width: 537px;
+    height: 304px;
+    margin-left: 85px;
+}
+
+.feature-title .first {
+    font-weight: 300;
+    font-size: 45px;
+    color: #727272;
+}
+.feature-title .second {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+.feature-title .third {
+    font-weight: 700;
+    font-size: 45px;
+    color: #FF900E;
+}
+.feature-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    padding: 15px 0px;
 }
