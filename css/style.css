@@ -131,8 +131,10 @@ section {
 
 /* ---------- second container -------- */
 .second-container {
-    display: flex;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 70px;
+
 }
 
 .container-title {
@@ -168,7 +170,9 @@ section {
     font-size: 20px;
     color: #131313;
 }
-
+/* .right-section{
+    height: 100px;
+} */
 
  .btn2 {
     font-family: 'Work Sans', sans-serif;
@@ -283,7 +287,6 @@ footer {
 }
 
 /* -------responsive--------
-
 @media only screen and (max-width:688px) { 
     .first-container {      
         flex-direction: column-reverse;
