@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 5px;
+    padding: 20px 5px;
 }
 
 .nav-title {
@@ -58,6 +58,7 @@ article {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 
@@ -130,10 +131,8 @@ section {
 
 /* ---------- second container -------- */
 .second-container {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-column-gap: 70px;
-
+    display: flex;
+    gap: 80px;
 }
 
 .container-title {
@@ -170,7 +169,8 @@ section {
     color: #131313;
 }
 
-.btn2 {
+
+ .btn2 {
     font-family: 'Work Sans', sans-serif;
     width: 250px;
     height: 150px;
@@ -281,3 +281,31 @@ footer {
     color: #424242;
     padding: 40px;
 }
+
+/* -------responsive--------
+
+@media only screen and (max-width:688px) { 
+    .first-container {      
+        flex-direction: column-reverse;
+        padding: 10px 20px;
+    }
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .feature, .second-container {
+        text-align: center;
+        margin:50px 150px;
+    }
+    .second-container {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    .second-container .right-section img{
+width: 200px;
+height: 400px;
+    }
+    .hide{
+        display: none;
+    }
+} */
